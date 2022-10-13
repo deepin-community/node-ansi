@@ -1,0 +1,30 @@
+Source: node-ansi
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Jérémy Lal <kapouer@melix.org>
+Build-Depends:
+ debhelper-compat (= 13)
+ , nodejs
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Homepage: https://github.com/TooTallNate/ansi.js
+Vcs-Git: https://salsa.debian.org/js-team/node-ansi.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-ansi
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-ansi
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Multi-Arch: foreign
+Description: Advanced ANSI formatting tool for Node.js
+ node-ansi is a module for Node.js that provides an easy-to-use API
+ for writing ANSI escape codes to Stream instances.
+ ANSI escape codes are used to do fancy things in a terminal window,
+ like render text in colors, delete characters, lines, the entire window,
+ or hide and show the cursor, and lots more.
+ .
+ Node.js is an event-based server-side javascript engine.
